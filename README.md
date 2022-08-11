@@ -1,32 +1,19 @@
 # T24-Spring-REST
 
+Muestra los trabajadores según su nombre.
+#### GET localhost:8181/api/trabajadores/nombre/Marta  
 
-GET localhost:8181/api/trabajadores/nombre/Marta
-[
-    {
-        "id": 1,
-        "nombre": "Marta",
-        "trabajo": "Programador",
-        "salario": 0.0
-    }
-]
+Añade un trabajador poniendo en formato JSON en body.
+#### POST localhost:8181/api/trabajadores
 
-GET localhost:8181/api/trabajadores/4
-{
-    "id": 4,
-    "nombre": "Facundo",
-    "trabajo": "Arquitecto",
-    "salario": 0.0
-}
+Muestra la información de un trabajador según su ID.
+#### GET localhost:8181/api/trabajadores/4
 
-PUT localhost:8181/api/trabajadores/4
-{
-    "id": 4,
-    "nombre": "Facundo",
-    "trabajo": "CEO",
-    "salario": 100000.0
-}
+Actualiza la información de un trabajador según su ID.
+#### PUT localhost:8181/api/trabajadores/4
 
-DELETE localhost:8181/api/trabajadores/4
+Elimina un trabajador según su ID.
+#### DELETE localhost:8181/api/trabajadores/4
 
-GET localhost:8181/api/trabajadores
+Muestra todos los trabajadores insertados.
+#### GET localhost:8181/api/trabajadores
